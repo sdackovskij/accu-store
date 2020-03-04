@@ -52,3 +52,24 @@ a.dropdown-trigger {
   display: flex;
 
 }
+
+li.waves-effect {
+  display: block;
+}
+
+.collapsible>.active .collapsible-header .chevron {
+    transform: rotate(90deg);
+}
+
+.sidenav::-webkit-scrollbar {
+  display: none;
+}
+
+.dropdown-content li>a>i.product-cart-icons{
+    margin-right: 5px;
+}
+
+.dropdown-content li>a {
+    padding: 10px 8px;
+    
+}

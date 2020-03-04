@@ -14,47 +14,44 @@ return (
         <div className="user-view">
           <img className="logoImg" src="./img/logo1.jpg" />
         </div>
-      </li>
+      </li>     
       <li>
         <div className="divider"></div>
       </li>
-      <li>
-        <a className="subheader" href="#!">
-          Pokedex
-        </a>
+      <li className="no-padding">
+        <ul className="collapsible collapsible-accordion">
+          <li className="bold waves-effect">
+            <a className="collapsible-header" tabIndex="0">Каталог<i className="material-icons chevron">chevron_right</i></a>
+            <div className="collapsible-body" >
+              <ul>
+                <li><NavLink className="waves-effect sidenav-close" exact to='/' activeClassName="active">
+                  <i className="material-icons">exposure</i>Аккумуляторы
+       </NavLink></li>
+                <li> <NavLink className="waves-effect sidenav-close" to='/my-pokedex' activeClassName="active" >
+                  <i className="material-icons">battery_charging_full</i>Зарядные устройства
+       </NavLink></li>
+                
+              </ul>
+            </div>
+          </li>
+        </ul>
+
       </li>
-      <li>
-        <div className="divider"></div>
-      </li>
-      <li>  
-        <NavLink className="waves-effect sidenav-close" exact to='/' activeClassName="active">
-        <i className="material-icons">apps</i>All pokemons
-       </NavLink>
-      </li>
-      <li>
-        <NavLink className="waves-effect sidenav-close" to='/my-pokedex' activeClassName="active" >
-          <i className="material-icons">favorite</i>My pokemons
-       </NavLink>
-      </li>
-      <li>
-        <div className="divider"></div>
-      </li>
-      <li>
-        <a className="subheader" href="#!">
-          Pokemons Game
-        </a>
-      </li>
-      <li>
-        <div className="divider"></div>
-      </li>
-      <li>
-        <a className="waves-effect" href="#!">
-          <i className="material-icons">local_library</i>
-          Quiz
-        </a>
-      </li>
-      <li>
-        <div className="divider"></div>
+      <li className="no-padding">
+        <ul className="collapsible collapsible-accordion">
+          <li className="bold waves-effect">
+            <a className="collapsible-header" tabIndex="0">О нас<i className="material-icons chevron">chevron_right</i></a>
+            <div className="collapsible-body" >
+              <ul>
+                <li><a href="/pages/admin-dashboard" className="waves-effect active">Наши магазины<i className="material-icons">web</i></a></li>
+                <li><a href="/pages/admin-fixed-chart" className="waves-effect">Доставка<i className="material-icons">list</i></a></li>
+                <li><a href="/pages/admin-grid" className="waves-effect">Отзывы<i className="material-icons">dashboard</i></a></li>
+                <li><a href="/pages/admin-chat" className="waves-effect">Полезное<i className="material-icons">chat</i></a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
       </li>
     </ul>
     <a
@@ -80,12 +77,8 @@ return (
 
     
     <ul id='dropdown1' className='dropdown-content'>
-      <li><a href="#!">one</a></li>
-      <li><a href="#!">two</a></li>
-      <li className="divider" tabindex="-1"></li>
-      <li><a href="#!">three</a></li>
-      <li><a href="#!"><i className="material-icons">view_module</i>four</a></li>
-      <li><a href="#!"><i className="material-icons">cloud</i>five</a></li>
+          <li><a href="#!"><i className="material-icons product-cart-icons">attach_money</i>Оформить</a></li>
+          <li><a href="#!"><i className="material-icons product-cart-icons">delete_forever</i><span className="product-cart-text">Очистить</span></a></li>
     </ul>
 </div>
     </div>
