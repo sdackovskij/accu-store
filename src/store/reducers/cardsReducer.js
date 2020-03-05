@@ -17,53 +17,61 @@ const initialState = {
 
 export default function cardsReducer(state = initialState, action) {
   switch (action.type) {
-    case AXIOS_DATA_LOADING:
+    case AXIOS_DATA_LOADING: {
       return {
         ...state,
         loading: true,
       };
-    case TOTAL_AMOUNT:
+    }
+
+    case TOTAL_AMOUNT: {
       return {
         ...state,
         total: action.total,
       };
-    case AXIOS_DATA_LOAD:
+    }
+
+    case AXIOS_DATA_LOAD: {
       return {
         ...state,
         pokemons: action.db.data,
         onCurentPage: state.onCurentPage + 8,
         loading: false,
       };
+    }
 
-    case END_OF_DATA:
+    case END_OF_DATA: {
       return {
         ...state,
         endOfList: action.loadMoreButton,
       };
+    }
 
-    case ADD_TO_MY_POKEDEX:
-      const myPokemon = [...state.pokemons];
-
-      myPokemon.forEach((item) => {
-        if (item.id == action.payload.id) {
-          (item.isMy = action.payload.isMy), (item.date = action.payload.date);
-        }
-      });
+    case ADD_TO_MY_POKEDEX: {
+      const myPokemon = state
+        .pokemons
+        .map((item) => (`${item.id}` === `${action.payload.id}`
+          ? { ...item, isMy: action.payload.isMy, date: action.payload.date }
+          : item
+        ));
 
       return {
         ...state,
         pokemons: myPokemon,
       };
+    }
 
-    case RESET_PAGE:
+    case RESET_PAGE: {
       return {
         ...state,
         pokemons: [],
         onCurentPage: 8,
         endOfList: '',
       };
+    }
 
-    default:
+    default: {
       return state;
+    }
   }
 }

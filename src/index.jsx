@@ -1,15 +1,19 @@
-import '@babel/polyfill';
-import 'react-app-polyfill/ie11';
+
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import './style/scss/index.scss';
+import 'materialize-css/dist/js/materialize';
+
 import { createStore, compose, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import { BrowserRouter } from 'react-router-dom';
 import rootReducer from './store/reducers/rootReducer';
 import App from './App/App';
-
 
 const composeEnhancers = typeof window === 'object' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
   ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({

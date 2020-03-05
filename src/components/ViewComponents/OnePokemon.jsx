@@ -28,13 +28,13 @@ const OnePokemon = ({ match, pokemons }) => {
             {' '}
           </h2>
           <h4 className="white-text">
-Pokemon ID:
+            Pokemon ID:
             {ID}
             {' '}
           </h4>
           <h4 className="white-text">
-Status:
-            {pokemon.isMy ? `Catched ${new Date((pokemon.date)).toLocaleDateString()}` : 'Not catched'}
+            Status:
+            {pokemon.isMy ? `Caught ${new Date((pokemon.date)).toLocaleDateString()}` : 'Not caught'}
             {' '}
           </h4>
         </div>

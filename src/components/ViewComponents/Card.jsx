@@ -21,7 +21,12 @@ class Card extends React.Component {
       <div className="row">
         <div className="col s12 m4 l3 center-align">
           <div
+            role="link"
+            tabIndex={0}
             className="card waves-effect hoverable "
+            onKeyPress={() => {
+              history.push(`/pokemon/${pokemon.id}`);
+            }}
             onClick={() => {
               history.push(`/pokemon/${pokemon.id}`);
             }}
@@ -55,11 +60,11 @@ Card.propTypes = {
   pokemon: PropTypes.shape({
     id: PropTypes.number,
     name: PropTypes.string,
-    date: PropTypes.date,
+    date: PropTypes.instanceOf(Date),
     isMy: PropTypes.bool,
   }).isRequired,
   srcImg: PropTypes.string.isRequired,
-  add: PropTypes.func,
+  add: PropTypes.func.isRequired,
   history: PropTypes.shape({
     push: PropTypes.func,
   }).isRequired,

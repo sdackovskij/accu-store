@@ -34,11 +34,10 @@ export function axiosData(onPage) {
       .get(`http://localhost:3000/pokemons?_page=1&_limit=${onPage}`)
       .then((db) => {
         dispatch(axiosDataLoad(db));
-        for (const pair of Object.entries(db.headers)) {
-          if (pair[0] === 'x-total-count') {
-            dispatch(isTotal(pair[1]));
-          }
-        }
+        Object
+          .entries(db.headers)
+          .filter(([headerKey]) => headerKey === 'x-total-count')
+          .forEach(([, headerVal]) => dispatch(isTotal(headerVal)));
       });
   };
 }
@@ -50,11 +49,10 @@ export function axiosDataMyPokemons(onPage) {
       .get(`http://localhost:3000/my_pokemons?_page=1&_limit=${onPage}`)
       .then((db) => {
         dispatch(axiosDataLoad(db));
-        for (const pair of Object.entries(db.headers)) {
-          if (pair[0] === 'x-total-count') {
-            dispatch(isTotal(pair[1]));
-          }
-        }
+        Object
+          .entries(db.headers)
+          .filter(([headerKey]) => headerKey === 'x-total-count')
+          .forEach(([, headerVal]) => dispatch(isTotal(headerVal)));
       });
   };
 }

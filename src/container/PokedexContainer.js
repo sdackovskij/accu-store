@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { axiosData } from '../store/actions/cardsAction';
 import { isActiveLoadMore } from '../store/actions/loadButtonAction';
-import { resetPage } from '../store/actions/resetPageAction';
+import resetPage from '../store/actions/resetPageAction';
 import { addToMyPokedex } from '../store/actions/addToMyPokedex';
 import Content from '../components/LayoutComponents/ContentLayout';
 

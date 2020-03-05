@@ -14,7 +14,8 @@ const LoadMore = ({
       type="button"
       className={`waves-effect waves-light btn-large red ${endOfList}`}
       onClick={() => {
-        axiosData(onCurentPage), isActiveLoadMore(total, onCurentPage);
+        axiosData(onCurentPage);
+        isActiveLoadMore(total, onCurentPage);
       }}
     >
       Load more

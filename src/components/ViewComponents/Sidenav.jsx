@@ -1,13 +1,14 @@
 import React from 'react';
 import '../../style/scss/Sidenav.scss';
 import { NavLink } from 'react-router-dom';
+import logo from '../../../public/img/logo1.jpg';
 
 const Sidenav = () => (
   <nav>
     <ul id="slide-out" className="sidenav sidenav-fixed">
       <li>
         <div className="user-view">
-          <img alt="logo" className="logoImg" src="./img/logo1.jpg" />
+          <img alt="logo" className="logoImg" src={logo} />
         </div>
       </li>
       <li>
@@ -102,8 +103,8 @@ const Sidenav = () => (
     <div className="nav-wrapper">
       <form className="search-area">
         <div className="input-field">
-          <input id="search" type="search" required />
           <label className="label-icon" htmlFor="search">
+            <input id="search" type="search" required />
             <i className="material-icons">search</i>
           </label>
           <i className="material-icons">close</i>

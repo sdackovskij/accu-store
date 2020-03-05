@@ -57,7 +57,7 @@ Content.propTypes = {
   onCurentPage: PropTypes.number.isRequired,
   isActiveLoadMore: PropTypes.func.isRequired,
   loading: PropTypes.bool.isRequired,
-  addToMyPokedex: PropTypes.func,
+  addToMyPokedex: PropTypes.func.isRequired,
   axiosData: PropTypes.func.isRequired,
   resetPage: PropTypes.func.isRequired,
   pokemons: PropTypes.arrayOf(

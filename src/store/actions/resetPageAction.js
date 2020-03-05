@@ -1,7 +1,7 @@
 import { RESET_PAGE } from './actionTypes';
 
 
-export function resetPage() {
+export default function resetPage() {
   return {
     type: RESET_PAGE,
   };
