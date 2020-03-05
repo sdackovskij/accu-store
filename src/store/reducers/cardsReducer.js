@@ -4,15 +4,15 @@ import {
   AXIOS_DATA_LOADING,
   RESET_PAGE,
   ADD_TO_MY_POKEDEX,
-  TOTAL_AMOUNT
-} from "../actions/actionTypes";
+  TOTAL_AMOUNT,
+} from '../actions/actionTypes';
 
 const initialState = {
   pokemons: [],
   onCurentPage: 8,
-  endOfList: "",
+  endOfList: '',
   loading: false,
-  total: 0
+  total: '0',
 };
 
 export default function cardsReducer(state = initialState, action) {
@@ -20,31 +20,31 @@ export default function cardsReducer(state = initialState, action) {
     case AXIOS_DATA_LOADING:
       return {
         ...state,
-        loading: true
+        loading: true,
       };
     case TOTAL_AMOUNT:
       return {
         ...state,
-        total: action.total
+        total: action.total,
       };
     case AXIOS_DATA_LOAD:
       return {
         ...state,
         pokemons: action.db.data,
         onCurentPage: state.onCurentPage + 8,
-        loading: false
+        loading: false,
       };
 
     case END_OF_DATA:
       return {
         ...state,
-        endOfList: action.loadMoreButton
+        endOfList: action.loadMoreButton,
       };
 
     case ADD_TO_MY_POKEDEX:
       const myPokemon = [...state.pokemons];
-      
-      myPokemon.forEach(item => {
+
+      myPokemon.forEach((item) => {
         if (item.id == action.payload.id) {
           (item.isMy = action.payload.isMy), (item.date = action.payload.date);
         }
@@ -52,7 +52,7 @@ export default function cardsReducer(state = initialState, action) {
 
       return {
         ...state,
-        pokemons: myPokemon
+        pokemons: myPokemon,
       };
 
     case RESET_PAGE:
@@ -60,7 +60,7 @@ export default function cardsReducer(state = initialState, action) {
         ...state,
         pokemons: [],
         onCurentPage: 8,
-        endOfList: ""
+        endOfList: '',
       };
 
     default:

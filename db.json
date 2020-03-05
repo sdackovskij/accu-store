@@ -152,7 +152,9 @@
     },
     {
       "name": "nidoqueen",
-      "id": 31
+      "id": 31,
+      "isMy": true,
+      "date": "2020-03-05T09:47:38.611Z"
     },
     {
       "name": "nidoran-m",
@@ -160,7 +162,9 @@
     },
     {
       "name": "nidorino",
-      "id": 33
+      "id": 33,
+      "isMy": true,
+      "date": "2020-03-05T10:17:39.356Z"
     },
     {
       "name": "nidoking",
@@ -168,7 +172,9 @@
     },
     {
       "name": "clefairy",
-      "id": 35
+      "id": 35,
+      "isMy": true,
+      "date": "2020-03-05T09:48:44.561Z"
     },
     {
       "name": "clefable",
@@ -180,7 +186,9 @@
     },
     {
       "name": "ninetales",
-      "id": 38
+      "id": 38,
+      "isMy": true,
+      "date": "2020-03-05T10:18:26.287Z"
     },
     {
       "name": "jigglypuff",
@@ -188,7 +196,9 @@
     },
     {
       "name": "wigglytuff",
-      "id": 40
+      "id": 40,
+      "isMy": true,
+      "date": "2020-03-05T10:22:21.748Z"
     },
     {
       "name": "zubat",
@@ -204,7 +214,9 @@
     },
     {
       "name": "gloom",
-      "id": 44
+      "id": 44,
+      "isMy": true,
+      "date": "2020-03-05T10:34:00.483Z"
     },
     {
       "name": "vileplume",
@@ -212,7 +224,9 @@
     },
     {
       "name": "paras",
-      "id": 46
+      "id": 46,
+      "isMy": true,
+      "date": "2020-03-05T10:35:41.225Z"
     },
     {
       "name": "parasect",
@@ -220,7 +234,9 @@
     },
     {
       "name": "venonat",
-      "id": 48
+      "id": 48,
+      "isMy": true,
+      "date": "2020-03-05T10:36:21.471Z"
     },
     {
       "name": "venomoth",
@@ -228,7 +244,9 @@
     },
     {
       "name": "diglett",
-      "id": 50
+      "id": 50,
+      "isMy": true,
+      "date": "2020-03-05T10:58:55.228Z"
     },
     {
       "name": "dugtrio",
@@ -3917,6 +3935,60 @@
       "id": 20,
       "isMy": true,
       "date": "2020-03-02T21:04:06.656Z"
+    },
+    {
+      "name": "nidoqueen",
+      "id": 31,
+      "isMy": true,
+      "date": "2020-03-05T09:47:38.611Z"
+    },
+    {
+      "name": "clefairy",
+      "id": 35,
+      "isMy": true,
+      "date": "2020-03-05T09:48:44.561Z"
+    },
+    {
+      "name": "nidorino",
+      "id": 33,
+      "isMy": true,
+      "date": "2020-03-05T10:17:39.356Z"
+    },
+    {
+      "name": "ninetales",
+      "id": 38,
+      "isMy": true,
+      "date": "2020-03-05T10:18:26.287Z"
+    },
+    {
+      "name": "wigglytuff",
+      "id": 40,
+      "isMy": true,
+      "date": "2020-03-05T10:22:21.748Z"
+    },
+    {
+      "name": "gloom",
+      "id": 44,
+      "isMy": true,
+      "date": "2020-03-05T10:34:00.483Z"
+    },
+    {
+      "name": "paras",
+      "id": 46,
+      "isMy": true,
+      "date": "2020-03-05T10:35:41.225Z"
+    },
+    {
+      "name": "venonat",
+      "id": 48,
+      "isMy": true,
+      "date": "2020-03-05T10:36:21.471Z"
+    },
+    {
+      "name": "diglett",
+      "id": 50,
+      "isMy": true,
+      "date": "2020-03-05T10:58:55.228Z"
     }
   ]
 }

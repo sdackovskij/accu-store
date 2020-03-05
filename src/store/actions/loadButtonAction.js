@@ -1,18 +1,18 @@
-import { END_OF_DATA } from "./actionTypes";
-
-export function isActiveLoadMore(total, onPageNumber) {
-  return dispatch => {
-    if (total < onPageNumber) {
-      dispatch(endOfData("disabled"));
-    } else {
-      dispatch(endOfData(""));
-    }
-  };
-}
+import { END_OF_DATA } from './actionTypes';
 
 export function endOfData(loadMoreButton) {
   return {
     type: END_OF_DATA,
-    loadMoreButton
+    loadMoreButton,
+  };
+}
+
+export function isActiveLoadMore(total, onPageNumber) {
+  return (dispatch) => {
+    if (total < onPageNumber) {
+      dispatch(endOfData('disabled'));
+    } else {
+      dispatch(endOfData(''));
+    }
   };
 }
