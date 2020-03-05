@@ -1,5 +1,6 @@
 import React from "react";
 import "../../style/scss/Sidenav.scss";
+import logo from '../../../public/img/logo1.jpg';
 import { NavLink } from "react-router-dom";
 
 class Sidenav extends React.Component {
@@ -12,7 +13,7 @@ return (
     <ul id="slide-out" className="sidenav sidenav-fixed">
       <li>
         <div className="user-view">
-          <img className="logoImg" src="./img/logo1.jpg" />
+          <img className="logoImg" src={logo}/>
         </div>
       </li>     
       <li>

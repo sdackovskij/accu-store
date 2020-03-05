@@ -1,8 +1,12 @@
-import "@babel/polyfill";
-import "react-app-polyfill/ie11";
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
+
+import 'materialize-css/dist/js/materialize'
+
+import "./style/scss/index.scss";
+
 import React from "react";
 import ReactDOM from "react-dom";
-import "./style/scss/index.scss";
 import App from "./App/App";
 import {createStore, compose, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
