@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../style/scss/Sidenav.scss';
 import { NavLink } from 'react-router-dom';
-import logo from '../../../public/img/logo1.jpg';
+import logo from '../../../public/img/carLogo3.jpg';
 
 const Sidenav = () => (
   <nav>
@@ -13,6 +13,17 @@ const Sidenav = () => (
       </li>
       <li>
         <div className="divider" />
+      </li>
+      <li>
+        <NavLink
+          className="waves-effect sidenav-close"
+          exact
+          to="/"
+          activeClassName="active"
+        >
+          <i className="material-icons">home</i>
+          Главная страница
+        </NavLink>
       </li>
       <li className="no-padding">
         <ul className="collapsible collapsible-accordion">
@@ -27,7 +38,7 @@ const Sidenav = () => (
                   <NavLink
                     className="waves-effect sidenav-close"
                     exact
-                    to="/"
+                    to="/pokedex"
                     activeClassName="active"
                   >
                     <i className="material-icons">exposure</i>
@@ -35,7 +46,7 @@ const Sidenav = () => (
                   </NavLink>
                 </li>
                 <li>
-                  {' '}
+                  {" "}
                   <NavLink
                     className="waves-effect sidenav-close"
                     to="/my-pokedex"
@@ -102,12 +113,12 @@ const Sidenav = () => (
 
     <div className="nav-wrapper">
       <form className="search-area">
-        <div className="input-field">
-          <label className="label-icon" htmlFor="search">
-            <input id="search" type="search" required />
-            <i className="material-icons">search</i>
+        <div class="input-field">
+          <input id="search" type="search" required />
+          <label class="label-icon" for="search">
+            <i class="material-icons">search</i>
           </label>
-          <i className="material-icons">close</i>
+          <i class="material-icons">close</i>
         </div>
       </form>
 
