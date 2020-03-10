@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Sidenav from '../ViewComponents/Sidenav';
+import Sidenav from '../ViewComponents/Navbar/Sidenav';
 
 const Layout = ({ children }) => (
   <div>
