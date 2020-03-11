@@ -9,7 +9,7 @@ class MainPage extends React.Component {
       <div>
         <div className="row">
           <div className="col s12">
-            <div className="card-panel teal main-search-box">
+            <div className="card-panel main-search-box">
               <h4 className="white-text center-align">
                 Найти нужные запчасти для вашего автомобиля
               </h4>
@@ -49,7 +49,7 @@ class MainPage extends React.Component {
               </div>
               <div className="center-align">
                 <button
-                  className="btn waves-effect waves-light red lighten-2"
+                  className="btn waves-effect waves-light red darken-3"
                   type="submit"
                   name="action"
                 >
