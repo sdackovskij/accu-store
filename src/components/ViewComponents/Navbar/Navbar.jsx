@@ -1,54 +1,33 @@
-import React from 'react';
-import './Navbar.scss';
-import { NavLink } from 'react-router-dom';
-
+import React from "react";
+import "./Navbar.scss";
+import { NavLink } from "react-router-dom";
 
 const Sidenav = () => (
-  <nav className="nav-wrapper">
-  
-      <div className="logoBox"><a href="#" className="brand-logo left">Logo</a></div>
-      <form className="search-area">
-        <div class="input-field">
-          <input id="search" type="search" placeholder="Найти..." required />
-          <label className="label-icon" for="search">
-            <i className="material-icons">search</i>
-          </label>
-          <i className="material-icons">close</i>
-        </div>
-      </form>
-
-    <div className="">
-      <ul class="right hide-on-med-and-down nav-icons">
-        <li><a href="#"><i class="material-icons">apps</i></a></li>
-        <li><a href="#"><i class="material-icons">explore</i></a></li>
-        <li><a href="#"><i class="material-icons">call</i></a></li>
-      </ul>
-    </div>
-      <div className="product-cart">
-      <a className="dropdown-trigger waves-effect waves-light btn-small" href="#!" data-target="dropdown1">
-          <i className="material-icons shopping-cart">shopping_cart</i>
-          Корзина
+  <header className="nav-wrapper">
+    <div className="content-box">
+      <div className="logo">AccuStore</div>
+      <div>
+        <a className="waves-effect waves-light btn-small catalog">
+          <i className="material-icons left catalog-icon">menu</i>Каталог
         </a>
-
-        <ul id="dropdown1" className="dropdown-content">
-          <li>
-            <a href="#!">
-              <i className="material-icons product-cart-icons">attach_money</i>
-              Оформить
-            </a>
-          </li>
-          <li>
-            <a href="#!">
-              <i className="material-icons product-cart-icons">
-                delete_forever
-              </i>
-              <span className="product-cart-text">Очистить</span>
-            </a>
-          </li>
-        </ul>
       </div>
-  
-  </nav>
+      <div className="search-box">
+        <form className="search-form">
+          <button type="button">Везде</button>
+          <input />
+          <button type="submit"><i className="material-icons left">search</i></button>
+        </form>
+      </div>
+      <div>
+      <ul className="nav-icons-list">
+        <li><i class="material-icons">search</i></li>
+        <li><i class="material-icons">view_module</i></li>
+          <li><i class="material-icons">favorite_border</i></li>
+        <li><i class="material-icons">more_vert</i></li>
+      </ul>
+      </div>
+    </div>
+  </header>
 );
 
 export default Sidenav;
