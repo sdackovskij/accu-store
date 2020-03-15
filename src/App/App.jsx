@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Layout from '../components/LayoutComponents/PageLayout';
+import Layout from '../components/ViewComponents/MaterialUi/Paperbase';
 import MyPokemons from '../container/MyPokemonsContainer';
 import Pokedex from '../container/PokedexContainer';
 import OnePokemon from '../container/OnePokemonContainer';

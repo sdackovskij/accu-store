@@ -1,76 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-@import "../../../node_modules/materialize-css/sass/materialize";
+
 
 body {
   background-color: whitesmoke;
   font-family: "Roboto", sans-serif;
 }
 
-  header, main, footer {
-      padding-left: 300px;
-    }
-.nav-wrapper {
- padding-left: 240px;
-  max-width: 100%;
-display: flex;
-justify-content: space-between;
-padding-right: 30px;
-}
-    
-    @media only screen and (max-width : 992px) {
-      header, main, footer, .nav-wrapper{
-        
-        padding-left: 0;
-
-      }
-    }
   
-    .clearfix {clear:both;}
-  
-.footer {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
 
-a.active{
-  background-color: rgba(138, 129, 129, 0.5);
-}
-
-.search-area {
-  width: 80%;
-}
-
-.shopping-cart {
- line-height: inherit !important;
- height: inherit !important;
- padding-right: 5px;
-}
-.product-cart {
-  display: flex;
-  align-items: center;
-}
-a.dropdown-trigger {
-  display: flex;
-
-}
-
-li.waves-effect {
-  display: block;
-}
-
-.collapsible>.active .collapsible-header .chevron {
-    transform: rotate(90deg);
-}
-
-.sidenav::-webkit-scrollbar {
-  display: none;
-}
-
-.dropdown-content li>a>i.product-cart-icons{
-    margin-right: 5px;
-}
-
-.dropdown-content li>a {
-    padding: 10px 8px;
-    
-}

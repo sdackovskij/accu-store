@@ -1,0 +1,19 @@
+.contentBar-wrapper {
+    height: 30px;
+    
+    background-color:#c5cae9;
+    display: flex;
+  justify-content: space-around; 
+}
+
+.contentBar-list {
+    display: flex;
+    width: 80%;
+     justify-content: space-around;
+    
+}
+.contentBar-list li{
+display: block;
+font-family: Roboto;
+padding: 5px 10px;
+}
